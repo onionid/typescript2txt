@@ -679,6 +679,7 @@ public:
 };
 
 void Reader::read_from(std::istream& in){
+  state = SAW_NOTHING;
   while(in){
     RState next_state = SAW_NOTHING;
     int tmp_val;
